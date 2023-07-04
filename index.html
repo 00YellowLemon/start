@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Hanken+Grotesk:wght@400;700;800&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="siz" src="drawers.jpg" alt="">
+    <div class="content">
+      <div class="text">
+        <h2 class="header">
+          Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+   
+        </h2>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.
+  
+        </p>
+      </div>
+    
+      <div class="footer">
+        
+        <ul>
+          <li><h2>share</h2></li>
+          <li><a href="icon-facebook.svg"><img src="icon-facebook.svg" alt=""></a></li>
+          <li><a href="icon-twitter.svg"><img src="icon-twitter.svg" alt=""></a></li>
+          <li><a href="icon-pinterest.svg"><img src="icon-pinterest.svg" alt=""></a></li>
+        </ul>
+        <button onclick="elHide()"><img src="icon-share.svg" alt=""></button>
+
+
+      </div>
+      <div class="footer1">
+        <div class="img">
+          <img src="avatar-michelle.jpg" alt="">
+          <div class="details">
+            <h2>
+              Michelle Appleton
+
+          </h2>
+
+          <h3>
+            28 Jun 2020
+          </h3>
+        </div>
+        </div>
+        <button onclick="elHide()"><img src="icon-share.svg" alt=""></button>
+      </div>
+
+    </div>
+  </div>
+  <script>
+   let p = document.getElementsByClassName("footer")[0];
+   let y = document.getElementsByClassName("footer1")[0];
+   let c = 1;
+   function elHide(){
+    if(c == 1){
+      p.style.display = "none";
+      y.style.display = "flex";
+      c = 0;
+    }
+    else{
+      p.style.display = "flex";
+      y.style.display = "none";
+      c = 1;
+
+    }
+     
+   }
+  </script>
+
+
+  
+
+
+</body>
+</html>
